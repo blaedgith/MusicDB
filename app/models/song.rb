@@ -4,8 +4,8 @@ class Song < ActiveRecord::Base
 	belongs_to :genre
 
 	validates :name, presence: true
-	validates :name, length: {:maximum 90}
-	validates :name, length: {:minimum 10}
+	validates :name, length: {maximum: 90}
+	validates :name, length: {minimum: 10}
 	validates :name, uniqueness: true
 
 end
