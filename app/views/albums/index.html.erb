@@ -1,13 +1,13 @@
-<link rel="stylesheet" type="text/css" href="../assets/stylesheets/application.css">
-<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+
 
 <p id="notice"><%= notice %></p>
 
-<div class="wrapper">
 
-<img src="../assets/albums.png">
 
-<table class="that">
+<center><img src="../assets/albums.png"></center>
+
+<table class="table">
+
   <thead class="this">
     <tr>
       <th>Title</th>
@@ -18,14 +18,14 @@
     </tr>
   </thead>
 
-  <tbody class="see">
+  <tbody>
     <% @albums.each do |album| %>
       <tr>
+        <td><%= image_tag(album.cover_url, width: 70) %>
+        </td>
         <td><%= album.title %></td>
         <td><%= album.genre.name %></td>
         <td><%= album.artist.name %></td>
-        <td><%= image_tag(album.cover_url, width: 70) %>
-        </td>
         </tr>
         <tr>
         <td><%= link_to 'Show', album %></td>
@@ -43,3 +43,6 @@
 <button type="button"><%= link_to 'New Album', new_album_path %></button>
 
 </div>
+
+<%= will_paginate @blogs %>
+

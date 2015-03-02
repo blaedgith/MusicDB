@@ -22,7 +22,7 @@ class GenresController < ApplicationController
 
   # GET /genres/1/edit
   def edit
-  end
+   end
 
   # POST /genres
   # POST /genres.json
