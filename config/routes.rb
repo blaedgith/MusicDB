@@ -5,6 +5,10 @@ Rails.application.routes.draw do
 
   get 'home/about'
 
+  resources :home
+
+  resources :about
+
   resources :genres
 
   resources :songs
@@ -12,6 +16,8 @@ Rails.application.routes.draw do
   resources :albums
 
   resources :artists
+
+ 
 
   
 
