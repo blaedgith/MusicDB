@@ -8,4 +8,8 @@ class Song < ActiveRecord::Base
 	validates :name, length: {minimum: 10}
 	validates :name, uniqueness: true
 
+	
+	extend FriendlyId
+	friendly_id :name, use: :slugged
+
 end
