@@ -2,9 +2,9 @@
 
 <p id="notice"><%= notice %></p>
 
-
-
-<center><img src="../assets/albums.png"></center>
+<div class="enter2">
+  <h1>Albums</h1>
+</div>
 
 <table class="table table-striped table-hover ">
 
@@ -22,11 +22,12 @@
   <tbody>
     <% @albums.each do |album| %>
       <tr>
-        <td><%= image_tag(album.cover_url, width: 70) %>
-        </td>
+        
         <td><%= album.title %></td>
         <td><%= album.genre.name %></td>
         <td><%= album.artist.name %></td>
+        <td><%= image_tag(album.cover_url, width: 70) %>
+        </td>
         </tr>
          <tr class="danger">
         <td><%= link_to 'Show', album %></td>

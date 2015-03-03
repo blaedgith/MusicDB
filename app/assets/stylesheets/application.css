@@ -13,7 +13,19 @@
  *= require_tree .
  *= require_self
  */
-.enter {
+
+
+.enter2 {
+	background-image: url('http://votemenot.com/upload/964/9640.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: auto;
+	margin-top: 2%;
 	width: 100%;
-	height: 30px;
+	height: 500px;
+}
+
+h1 {
+	padding: 0;
+	
 }
