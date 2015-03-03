@@ -1,4 +1,5 @@
 class SongsController < ApplicationController
+  before_action :authenticate_user!, except: [:new]
   before_action :set_song, only: [:show, :edit, :update, :destroy]
 
   # GET /songs
