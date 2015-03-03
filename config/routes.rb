@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
+  
+  root to: "home#index"
+
   get 'static_pages/home'
 
   get 'static_pages/about'
 
   get 'home/about'
+
+  devise_for :users
 
   resources :home
 
