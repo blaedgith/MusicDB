@@ -1,3 +1,45 @@
 // Place all the styles related to the Genres controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#table1 {
+	width: 300px;
+	height: 500px;
+	margin: auto;
+
+	h1{
+		margin: auto;
+		font-family: 'Open Sans', sans-serif;
+		
+	}
+}
+
+#genres {
+	border-radius: 15px;
+	background-color: #fff;
+	width: 400px;
+	height: 570px;
+	padding-bottom: 50px;
+	margin: auto;
+
+
+}
+
+#allgenres {
+	background-image: url('https://rasmalltalk.files.wordpress.com/2012/12/snsd-sunny-i-got-a-boy-teaser-pictures-9.jpg');
+	background-attachment: fixed;
+	width: 100%;
+	
+	padding-bottom: 20px;
+
+
+	h1 {
+		text-align: center;
+		color: #000;
+		font-size: 8em;
+		font-weight: lighter;
+		margin: 0;
+	}
+
+
+}

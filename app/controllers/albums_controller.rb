@@ -1,6 +1,5 @@
 class AlbumsController < ApplicationController
-  before_action :authenticate_user! :set_album, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
   # GET /albums
   # GET /albums.json
   def index
@@ -10,6 +9,7 @@ class AlbumsController < ApplicationController
   # GET /albums/1
   # GET /albums/1.json
   def show
+    @Album = Album.all
   end
 
   # GET /albums/new

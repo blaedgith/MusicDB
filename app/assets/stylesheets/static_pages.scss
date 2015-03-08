@@ -2,6 +2,109 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+$colorRed: #EF4836;
 	
 
+#body2 {
+	width: 100%;
+	height: 620px;
+	padding-top: 10%;
+	background-image: url('http://rebeccaniziol.com/wp-content/uploads/2013/03/concert-crowd.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	.aboutitle {
+		text-align: center;
+		font-size: 6em;
+		color: #fff;
+	}
+}
+
+.welcometext {
+	text-align: center;
+	padding: 10px;
+}
+
+.wrapper {
+	width: 500px;
+	height: 300px;
+	border-radius: 25px;
+	background-color: white;
+	margin: auto;
+	// margin-top: 50px;
+	// padding: 5px;
+	padding-left: 5px;
+
+	p {
+		color: #e73a3f;
+	}
+
+	
+}
+
+.enter {
+	margin: 0;
+	background-image: url('http://youthvillage.co.za/wp-content/uploads/2014/09/albums.gif');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 400px;
+	width: 100%;
+	// z-index: 1;
+
+	.welcome_text{
+		margin: 0;
+		text-align: center ;
+		font-size: 240px;
+		position: middle;
+		color: #fff;
+		top: 80;
+		padding-top: 100px;
+
+
+	}
+
+}
+
+.welcome {
+	width: 100%;
+	height: 100%;
+	background-color: #2AF5FF;
+	margin: 0;
+	padding: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	p {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 70px;
+		color: #000;
+		text-align: center;
+	}
+
+	strong {
+		color: $colorRed;
+	}
+}
+
+.explain {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		background-color: $colorRed;
+
+
+
+	.animation{
+		border-radius: 180px;
+		width: 200px;
+		
+
+
+
+	}
+
+	.animation:hover { opacity: 0 }
+
+	.animation {
+-webkit-transition: opacity 1s ease-in-out;}
+}

@@ -1,8 +1,11 @@
+
+
 <p id="notice"><%= notice %></p>
 
-<div class="first_div"><h1>Listing Artists</h1></div>
-
-<table>
+<div class="first_div">
+<center><h1 class="text"> Artists &hearts;</h1></center>
+<div id="artistdiv">
+<table class="table table-striped table-hover " id="artisttable">
   <thead>
     <tr>
       <th>Name</th>
@@ -26,6 +29,14 @@
   </tbody>
 </table>
 
-<br>
 
-<%= link_to 'New Artist', new_artist_path %>
+<br>
+<center>
+<button type="button" class="btn btn-info"><%= link_to 'New Artist', new_artist_path %></button>
+
+</center>
+</div>
+</div>
+
+
+

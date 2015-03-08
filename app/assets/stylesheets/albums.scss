@@ -1,3 +1,39 @@
 // Place all the styles related to the Albums controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.enter2 {
+	background-image: url('http://www.grizzleemartin.com/blog/wp-content/uploads/2013/04/1-all-time-low-pierce-the-veil-live-at-house-of-blues-orlando-florida-concert-photography-by-photos-by-chris-martin.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding-bottom: 20px;
+	margin-top: 0;
+	width: 100%;
+	
+	
+}
+
+.text {
+	color: #fff;
+	font-weight: lighter;
+	font-size: 8em;
+
+
+}
+
+// #albumstable {
+// 	width: 500px;
+// 	float: right;
+// }
+
+.albumdiv {
+	background-color: #fff;
+	border-radius: 25px;
+	padding: 10px;
+	width: 420px;
+	margin: auto;
+
+	
+}
+
+

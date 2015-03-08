@@ -1,3 +1,33 @@
 // Place all the styles related to the Songs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.allsongs {
+	background-image: url('http://www.dondeir.com/wp-content/uploads/2014/01/Fall-Out-Boy.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding-bottom: 20px;
+	margin-top: 0;
+	width: 100%;
+	height: 700px;
+	
+		h1 {
+			font-size: 8em;
+			color: #fff;
+			font-weight: lighter;
+
+		}
+	
+
+}
+
+#songstable {
+	background-color: #fff;
+	border-radius: 25px;
+	padding: 10px;
+	width: 500px;
+	margin: auto;
+
+
+	
+}

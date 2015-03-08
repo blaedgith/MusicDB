@@ -1,6 +1,5 @@
 class GenresController < ApplicationController
-  before_action :authenticate_user! :set_genre, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
   # GET /genres
   # GET /genres.json
   def index
@@ -10,6 +9,7 @@ class GenresController < ApplicationController
   # GET /genres/1
   # GET /genres/1.json
   def show
+    @genre = Genre.find(params[:id])
   end
 
   # GET /genres/new
@@ -22,7 +22,8 @@ class GenresController < ApplicationController
 
   # GET /genres/1/edit
   def edit
-   end
+    @genre = Genre.find(params[:id])
+  end
 
   # POST /genres
   # POST /genres.json
