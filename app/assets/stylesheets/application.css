@@ -16,10 +16,37 @@
  *= require rails_bootstrap_forms
  */
  
+/*THIS IS FOR ALL THE NEWSPAGES/EDITPAGES*/
 
 
 
 
+
+
+/*.newbody {
+	background-image: url('https://s-media-cache-ak0.pinimg.com/originals/84/58/4c/84584c8835b1c6f4538abfad4aef7cec.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: cover;
+	padding-bottom: 20px;
+
+
+}
+
+
+h1{
+	color: #fff;
+	font-size: 6em;
+	font-weight: lighter;
+}
+
+.form {
+	background-color: #fff;
+	border-radius: 25px;
+	padding: 10px;
+	height: 100%;
+*/
+}
 
 
 

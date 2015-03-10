@@ -1,11 +1,12 @@
 class SongsController < ApplicationController
-  before_action :authenticate_user!
   before_action :set_song, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
+  
 
   # GET /songs
   # GET /songs.json
   def index
-    @songs = Song.all
+    @songs = Song.paginate(page: params[:page], per_page: 3)
   end
 
   # GET /songs/1

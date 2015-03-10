@@ -1,9 +1,10 @@
 class GenresController < ApplicationController
+  before_action :set_genre, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
   # GET /genres
   # GET /genres.json
   def index
-    @genres = Genre.all
+    @genres = Genre.paginate(page: params[:page], per_page: 6)
   end
 
   # GET /genres/1

@@ -1,9 +1,10 @@
 class ArtistsController < ApplicationController
+    before_action :set_artist, only: [:show, :edit, :update, :destroy]
  before_action :authenticate_user!
   # GET /artists
   # GET /artists.json
   def index
-    @artists = Artist.all
+    @artists = Artist.paginate(page: params[:page], per_page: 3)
   end
 
   # GET /artists/1
