@@ -2,7 +2,7 @@ class SongsController < ApplicationController
   before_action :set_song, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
   
-
+ include SongsHelper
   # GET /songs
   # GET /songs.json
   def index
@@ -12,7 +12,14 @@ class SongsController < ApplicationController
   # GET /songs/1
   # GET /songs/1.json
   def show
+    
+   
+
   end
+#end of show def.
+
+
+
 
   # GET /songs/new
   def new
