@@ -10,6 +10,14 @@ Rails.application.routes.draw do
 
   get '/about' => 'static_pages#about', as: 'about'
 
+  get '/songs'
+
+  get '/albums'
+
+  get '/genres/'
+
+  get '/artist'
+
 
   devise_for :users, controllers: {
     registrations: 'user/registrations'
