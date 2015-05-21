@@ -49,8 +49,8 @@
     </div>
   </div>
 </nav>
-<br>
-<div class="container">
+
+
          <strong> <p class="sign_up">
            <% if user_signed_in? %>
            Logged in as <strong><%= current_user.email %></strong>
@@ -61,8 +61,7 @@
            <%= link_to "Login", new_user_session_path, class: 'navbar-link'  %>
            <% end %>
          </p> </strong>
-       </div>  -->
-    
+ 
       <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
 
