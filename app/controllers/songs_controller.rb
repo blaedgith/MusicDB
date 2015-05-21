@@ -1,6 +1,5 @@
 class SongsController < ApplicationController
-  before_action :set_song, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!
+ 
   
  include SongsHelper
   # GET /songs
